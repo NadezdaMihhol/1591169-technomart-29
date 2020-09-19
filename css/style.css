@@ -139,7 +139,6 @@ h1{
   color: var(--basic-white);
 }
 .slider-item{
-  background-color: var(--basic-dark);
 }
 .card-title{
   font-family: "PT Sans", Arial, sans-serif;
