@@ -195,7 +195,7 @@ h1{
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
-.cotainer-service{
+.service{
  background-color: var(--basic-blue-lighten);
 }
 .service-title{
