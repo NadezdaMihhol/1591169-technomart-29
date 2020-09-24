@@ -7,10 +7,12 @@
   --basic-blue: #3BBCE3;
   --basic-blue-lighten:#F1F5F7;
   --basic-blue-medium:#F3F7F9;
+  --basic-light-blue: #F2F6F8;
   --basic-white: #ffffff;
   --basic-red:#EE3643;
   --basic-darkred:#BA2732;
   --basic-extra-light-orange:#F9F5F0;
+  --basic-lighten-orange: #F7F3EC;
   --basic-light-orange: #FFD180;
   --basic-orange:#FFBF47;
   --basic-dark-orange:#FFC047;
@@ -176,8 +178,8 @@ h1{
 .container-title{
   background-color: var(--basic-extra-light-orange);
 }
-.del{
- font-family: "PT Sans", Arial, sans-serif;
+.old-price{
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -291,3 +293,82 @@ line-height: 24px;
 .feedback-item{
   color: var(--basic-light-orange);
 }
+.user{
+  text-decoration: none;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.profil{
+  text-decoration: none;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-dark);
+}
+.list{
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.container-title-catalog{
+  background-color: var(--basic-light-blue);
+}
+.filter-list{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.filter-list-title{
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-lighten-orange);
+}
+.filter-item{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+.filter-item-slider-text{
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-lighten-orange);
+}
+.filter-item-name{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--basic-black);
+  line-height: 19px;
+}
+.sorting{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-lighten-orange);
+}
+.list-price{
+  color: var(--basic-red);
+}
+.list-opacity{
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
