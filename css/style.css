@@ -21,8 +21,9 @@
   --basic-dark-green:#63A63E;
   --basic-light-black:#161D29;
   --basic-light-purple:#DC91D8;
+  --basic-light-white:#EAEAEA;
 }
-.page-body {
+.body{
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -32,6 +33,17 @@
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.page{
+  height: 100%;
+}
+.page-body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content ;
+  align-content: start;
 }
 img {
   max-width: 100%;
@@ -40,13 +52,25 @@ img {
 h1{
   visibility: hidden;
 }
+.main-header-bar{
+  background-color: var(--basic-extra-dark);
+}
+.main-header{
+  margin-bottom: 70px;
+}
+.header-title-wrapper{
+  display: grid;
+  width: 940px;
+  grid-template-columns: 1fr min-content;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .header-title{
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  background-color:  var(--basic-extra-dark);
   color: var(--basic-white);
 }
 .link{
@@ -58,8 +82,13 @@ h1{
   text-decoration: none;
   color: var(--basic-white);
 }
-.header-inner{
+.header-inner-wrapper{
   background-color: var(--basic-blue-lighten);
+}
+.header-inner{
+  display: grid;
+  width: 940px;
+  margin: 0 auto;
 }
 .header-slogan{
   font-family: "Cuprum", Arial, sans-serif;
@@ -105,7 +134,15 @@ h1{
   line-height: 24px;
   color: var(--basic-dark);
 }
+.main-navigation{
+  display: grid;
+  width: 940px;
+  grid-template-columns: 1fr min-content;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .site-navigation{
+  list-style: none;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -115,6 +152,14 @@ h1{
   background-color:  var(--basic-dark);
   color: var(--basic-white);
 }
+.container{
+  width: 940px;
+}
+.features-item{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+}
 .feature-item-title{
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
@@ -122,6 +167,8 @@ h1{
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-white);
+}
+.slider{
 }
 .slider-title{
   font-family: "Cuprum", Arial, sans-serif;
@@ -140,8 +187,7 @@ h1{
   line-height: 24px;
   color: var(--basic-white);
 }
-.slider-item{
-}
+
 .card-title{
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -153,18 +199,38 @@ h1{
   }
 .feature-item-materials{
   background-color: var(--basic-orange);
+  width: 300px;
+  height: 123px;
 }
 .feature-item-tool{
   background-color: var(--basic-blue);
+  width: 300px;
+  height: 123px;
 }
 .feature-item-tehnics{
   background-color: var(--basic-light-purple);
+  width: 300px;
+  height: 123px;
+}
+.slider-item{
+  width: 620px;
+  height: 266px;
+  background-color: var(--basic-black);
 }
 .feature-item-discount{
   background-color: var(--basic-light-green);
+  width: 300px;
+  height: 123px;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
+
 .feature-item-delivery{
   background-color: var(--basic-dark-orange);
+  width: 300px;
+  height: 123px;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 .container-title-goods{
   font-family: "Cuprum", Arial, sans-serif;
@@ -174,6 +240,11 @@ h1{
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-dark);
+}
+.container-card-body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 .container-title{
   background-color: var(--basic-extra-light-orange);
@@ -187,6 +258,14 @@ h1{
   text-transform: uppercase;
   color: var(--lightgray);
 }
+.card-style{
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-light-white);
+  width: 220px;
+  height: 318px;
+  margin-top: 20px;
+}
+
 .card-text{
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -195,10 +274,28 @@ h1{
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-red);
+  width: 141px;
   color: var(--basic-white);
 }
+.list-goods{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.index-columns{
+  display: grid;
+  grid-template-columns: 460px 300px;
+}
 .service{
- background-color: var(--basic-blue-lighten);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--basic-blue-lighten);
+}
+.wrapper-service{
+}
+.wrapper-delivery{
+  width: 619px;
 }
 .service-title{
   font-family: "Cuprum", Arial, sans-serif;
@@ -224,22 +321,37 @@ h1{
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  width: 460px;
 }
 .button-block{
+  width: 240px;
+  height: 185px;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
+  list-style: none;
   font-size: 21px;
   line-height: 30px;
 }
 .button-delivery{
+  width: 240px;
+  height: 61px;
   background-color: var(--basic-white);
   color: var(--basic-dark);
 }
 .button-garant{
+  width: 240px;
+  height: 61px;
   background-color: var(--basic-dark);
   color: var(--basic-white);
   horizontal-center
+}
+.contacts{
+  width: 300px;
+  padding-left: 180px
+}
+.company-collaboration{
+  list-style: none;
 }
 .collaboration-item{
 font-family: "Cuprum", Arial, sans-serif;

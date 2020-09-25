@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -10,18 +10,24 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="header-title">
-        <a class="logo">
-          <img src="img/логотип.svg" width="220" height="47" alt="Техномарт»">
-        </a>
-                <div class="search">
+      <div class="main-header-bar">
+        <div class="header-title-wrapper">
+          <div class="header-title">
+            <a class="logo">
+            <img src="img/логотип.svg" width="220" height="47" alt="Техномарт»">
+            </a>
+          <div class="search">
               <input type="search" name="search" id="search" placeholder="Поиск:">
-                </div>
+          </div>
               <a class="link" href="bookmarks.html">Закладки: 0</a>
               <a  class="link" href="Check.html">Корзина: 0</a>
               <button type="button">Оформить заказ</button>
+          </div>
+        </div>
       </div>
+    <div class="header-inner-wrapper">
     <div class="header-inner">
+        <div class="header-inner-row">
         <p class="header-slogan">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         <div class="user-navigation">
               <a class="login-link" href="login.html">Войти</a>
@@ -31,6 +37,7 @@
         <a class="telephone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
+        </div>
      <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a class="link" href="">Главная</a></li>
@@ -43,11 +50,14 @@
           </ul>
       </nav>
     </div>
+  </div>
     </header>
   <h1 class="visually-hidden">Строительный магазин</h1>
   <main>
-        <section>
+        <section class="">
           <div class="container">
+            <div class="container-features">
+            <div class="features-item">
             <div class="feature-item-materials">
                 <h4 class="feature-item-title">Материалы</h4>
                 <img src="img/materials-icon.png" width="44" height="65" alt="Материалы">
@@ -79,6 +89,8 @@
                   <h4 class="feature-item-title">Доставка</h4>
                   <img src="img/delivery-icon.png" width="78" height="63" alt="Доставка">
                   <button type="button" class="feauture-button-free">Бесплатно</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -88,37 +100,47 @@
                 <h3 class="container-title-goods">Популярные товары:</h3>
                 <a class="button" href="popular-goods.html">Все Популярные товары</a>
               </div>
+          <div class="container-card-body">
               <article class="card-body">
+                <div class="card-style">
                    <img class="card-img" src="img/snippet.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
                    <h4 class="card-title">Перфоратор BOSCH BFG 9000</h4>
                      <del class="old-price">32500 Р.</del>
                       <p class="card-text">25500 Р.</p>
                         <!--<a href="buy" class="">Купить</a>
                         <a href="in-bookmark" class="">В закладки</a>-->
+                </div>
               </article>
               <article class="card-body">
+                <div class="card-style">
                    <img class="card-img" src="img/snippet-18927 .png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                     <h4 class="card-title">Перфоратор BOSCH BFG 3000</h4>
                      <del class="old-price">15500 Р.</del>
                       <p class="card-text">15500 Р.</p>
                         <!--<a href="buy" class="">Купить</a>
                         <a href="in-bookmark" class="">В закладки</a>-->
+                  </div>
               </article>
               <article class="card-body">
+                <div class="card-style">
                     <img class="card-img" src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                     <h4 class="card-title">Перфоратор BOSCH BFG 6000</h4>
                     <del class="old-price">30500 Р.</del>
                      <p class="card-text">25500 Р.</p>
                         <!--<a href="buy" class="">Купить</a>
                         <a href="in-bookmark" class="">В закладки</a>-->
+                  </div>
               </article>
               <article class="card-body">
+                <div class="card-style">
                     <img class="card-img" src="img/snippet-18927 .png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                     <h4 class="card-title">Перфоратор BOSCH BFG 2000</h4>
                      <p class="card-text">12500 Р.</p>
                         <!--<a href="buy" class="">Купить</a>
                         <a href="in-bookmark" class="">В закладки</a>-->
+                  </div>
               </article>
+            </div>
             </div>
           </section>
             <section>
@@ -127,7 +149,7 @@
                   <h3 class="container-title-goods">Популярные Производители:</h3>
                   <a class="button" href="popular-firms">Все производители</a>
                 </div>
-                <ul class="">
+                <ul class="list-goods">
                   <li><a href="bosh.html">
                     <img class="card-img-producer" src="img/bosch.png" width="126" height="37" alt="bosch">
                   </a>
@@ -171,9 +193,9 @@
               </div>
            </section>
     <section>
-      <div class="container">
-          <div class="service">
-            <div class="wrapper-service">
+    <div class="container">
+    <div class="service">
+          <div class="wrapper-service">
           <h3 class="service-title">Сервисы</h3>
           <p class="service-delivery-text">
               Хороший интернет-магазин отличается от плохого не только ценами!
@@ -181,13 +203,13 @@
           </p>
           </div>
         <div class="item-delivery">
-          <img src="img/Gruzovik.svg" width="468" height="261" alt="delivery">
-          <ul class="button-block"></ul>
+          <ul class="button-block">
               <li class="button-delivery"><button type="button">Доставка</button></li>
               <li class="button-garant"><button type="button">Гарантия</button></li>
               <li class="button-garant"><button type="button">Кредит</button></li>
           </ul>
             <div class="wrapper-delivery">
+              <img src="img/Gruzovik.svg" width="468" height="261" alt="delivery" class="postalcar">
               <p class="delivery-title">Доставка</p>
               <p class="service-delivery-text">
                   Мы с удовольствием доставим ваш товар прямо<br>
@@ -196,42 +218,44 @@
                   поднимая его на ваш этаж!</p>
             </div>
           </div>
-          </div>
-      </div>
+    </div>
+    </div>
     </section>
-    <section>
+<section>
         <div class="container">
-          <div class="company">
-            <h3 class="service-title">Компания «Техномарт»</h3>
-            <p  class="service-delivery-text">
-                Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br>
-                Мы можем доставить ваш товар в самые отдаленные точки России!
-                Техномарт работает со многими транспортными компаниями:
-            </p>
-            <ul class="company-collaboration">
-              <li class="collaboration-item">
-                  <p>Деловые линии</p>
-                </li>
-                <li class="collaboration-item">
-                  <p>Автотрейдинг</p>
-                </li>
-                <li class="collaboration-item">
-                  <p>ЖелДорЭкспедиция</p>
-                </li>
-              </ul>
-                  <a class="button" href="company.html">Подробнее о компании</a>
-        </div>
-        <div class="contacts">
-            <h3 class="service-title">Контакты</h3>
-            <p> Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+          <div class="index-columns">
+              <div class="company">
+                <h3 class="service-title">Компания «Техномарт»</h3>
+                <p  class="service-delivery-text">
+                    Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br>
+                    Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+                    Техномарт работает со многими транспортными компаниями:
+                </p>
+                <ul class="company-collaboration">
+                  <li class="collaboration-item">
+                      <p>Деловые линии</p>
+                    </li>
+                    <li class="collaboration-item">
+                      <p>Автотрейдинг</p>
+                    </li>
+                    <li class="collaboration-item">
+                      <p>ЖелДорЭкспедиция</p>
+                    </li>
+                  </ul>
+                      <a class="button" href="company.html">Подробнее о компании</a>
+              </div>
+            <div class="contacts">
+                  <h3 class="service-title">Контакты</h3>
+                  <p> Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                     <!-- Здесь будет карта
                     <a class="" href="img/">
                       <img src="img/" width="" height="" alt="google-map"> -->
-                    </a> -->
-                    <button type="button">Заблудились? Напишите нам!</button>
-          </div>
+                    </a>
+                  <button type="button">Заблудились? Напишите нам!</button>
+            </div>
         </div>
-    </section>
+        </div>
+</section>
  </main>
         <footer class="page-footer">
           <div class="footer-inner">
