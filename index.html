@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -23,12 +23,12 @@
                       </form>
                       <div class="link">
                           <a class="bookmarks" href="bookmarks.html">Закладки: 0
-                              <svg class="bookmarks-icon" width="14" height="16" viewBox="14 16" xmlns="http://www.w3.org/2000/svg">
+                              <svg class="bookmarks-icon" width="14" height="16" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
                               </svg>
                           </a>
                           <a class="check" href="check.html">Корзина: 0
-                              <svg class="check-icon" width="15" height="15" viewBox="15 15" xmlns="http://www.w3.org/2000/svg">
+                              <svg class="check-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
                                   <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
                                   <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
@@ -101,50 +101,56 @@
                     <div class="container-features">
                         <div class="feature-item-materials features">
                             <h4 class="feature-item-title">Материалы</h4>
-                            <img class="img-features materials" src="img/materials-icon.png" width="44" height="65" alt="Материалы">
+                            <img class="img-features img-materials" src="img/materials-icon.png" width="44" height="65" alt="Материалы">
                             <button type="button" class="feauture-button">На любой вкус</button>
                             <div class="new"></div>
                         </div>
                         <div class="feature-item-tool features">
                             <h4 class="feature-item-title">Инструмент</h4>
-                            <img class="img-features"  src="img/tool-icon.png" width="75" height="61" alt="Инструмент">
+                            <img class="img-features img-tools"  src="img/tool-icon.png" width="75" height="61" alt="Инструмент">
                             <button type="button" class="feauture-button">На все случаи</button>
                         </div>
                         <div class="feature-item-tehnics features">
                             <h4 class="feature-item-title">Техника</h4>
-                            <img class="img-features" src="img/technics-icon.png" width="78" height="62" alt="Техника">
+                            <img class="img-features img-tehnics" src="img/technics-icon.png" width="78" height="62" alt="Техника">
                             <button type="button" class="feauture-button">Для стройки</button>
                         </div>
                         <div class="slider">
-                            <div class="slider-item slide-current">
-                                <h2 class="slider-title">Перфораторы</h2>
-                                <p class="slider-text">Настоящие мужские игрушки</p>
-                                <button type="button" class="button-red">Открыть каталог</button>
+                            <div class="slider-container">
+                                <div class="sliders">
+                                    <div class="slider-item slide-current active" id="first">
+                                      <h2 class="slider-title">Перфораторы</h2>
+                                      <p class="slider-text">Настоящие мужские игрушки</p>
+                                      <button type="button" class="button-red">Открыть каталог</button>
+                                    </div>
+                                    <div class="slider-next slide" id="second">
+                                      <h2 class="slider-title">Дрели</h2>
+                                      <p class="slider-text">Соседям на радость!</p>
+                                      <button type="button" class="button-red">Открыть каталог</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slider-next slide">
-                              <h2 class="slider-title">Дрели</h2>
-                              <p class="slider-text">Соседям на радость!</p>
-                              <button type="button" class="button-red">Открыть каталог</button>
-                          </div>
-                            <div class="slider-left">
-                                <button class="btn-previous" type="button" aria-label="Назад"></button>
-                            </div>
-                            <div class="slider-right">
-                                <button class="btn-next" type="button" aria-label="Вперед"></button>
-                            </div>
-                            <div class="slider-controls">
-                                <button class="current" type="button" aria-label="Первый слайд"></button>
-                                <button type="button" aria-label="Второй слайд"></button>
+                            <div class="slider-controls-wrapper">
+                                <div class="slider-left">
+                                    <button class="btn-previous" type="button" aria-label="Назад"></button>
+                                </div>
+                                <div class="slider-right">
+                                    <button class="btn-next" type="button" aria-label="Вперед"></button>
+                                </div>
+                                <div class="slider-controls">
+                                    <button class="first-slide"type="button" aria-label="Первый слайд"></button>
+                                    <button class="current second-slide" type="button" aria-label="Второй слайд"></button>
+                                </div>
                             </div>
                         </div>
                         <div class="feature-item-discount">
                             <h4 class="feature-item-title">Скидки 50%</h4>
-                            <img class="img-features" src="img/discounts-icon.png" width="59" height="72" alt="Скидки 50%">
+                            <img class="img-features img-discount" src="img/discounts-icon.png" width="59" height="72" alt="Скидки 50%">
                             <button type="button" class="feauture-button">На 350 товаров</button>
                         </div>
                         <div class="feature-item-delivery">
                             <h4 class="feature-item-title">Доставка</h4>
-                            <img class="img-features" src="img/delivery-icon.png" width="78" height="63" alt="Доставка">
+                            <img class="img-features img-delivery" src="img/delivery-icon.png" width="78" height="63" alt="Доставка">
                             <button type="button" class="feauture-button">Бесплатно</button>
                         </div>
                   </div>
@@ -175,9 +181,9 @@
                                   <div class="card-style">
                                       <div class="new"></div>
                                           <div class="card-img-container">
-                                              <img class="card-img" src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                                              <img class="card-img img-snippet" src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                                           </div>
-                                              <h4 class="card-title">Перфоратор BOSCH<br>BFG 3000</h4>
+                                              <h4 class="card-title title-snippet">Перфоратор BOSCH<br>BFG 3000</h4>
                                               <del class="old-price"><s>15500 Р.</s></del>
                                               <div class="card-price">
                                                   <p class="card-text">15500 Р.</p>
@@ -189,7 +195,7 @@
                               <article class="card-body">
                                   <div class="card-style">
                                       <div class="card-img-container">
-                                          <img class="card-img" src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                                          <img class="card-img img-snippet2" src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                                       </div>
                                         <h4 class="card-title">Перфоратор BOSCH<br>BFG 6000</h4>
                                         <del class="old-price"><s>30500 Р.</s></del>
@@ -204,9 +210,9 @@
                                   <div class="card-style">
                                       <div class="new"></div>
                                           <div class="card-img-container">
-                                              <img class="card-img" src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                                              <img class="card-img img-snippet" src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                                             </div>
-                                              <h4 class="card-title">Перфоратор BOSCH<br>BFG 2000</h4>
+                                              <h4 class="card-title title-snippet">Перфоратор BOSCH<br>BFG 2000</h4>
                                               <del class="old-price"><s></s></del>
                                               <div class="card-price">
                                                   <p class="card-text">12500 Р.</p>
@@ -234,7 +240,7 @@
                 <div class="container popular-goods">
                     <div class="container-title">
                         <h3 class="container-title-goods">Популярные Производители:</h3>
-                        <a class="button-red goods" href="popular-firms">Все производители</a>
+                        <a class="button-red goods btn-firms" href="popular-firms">Все производители</a>
                     </div>
                         <ul class="list-goods">
                             <li class="box">
@@ -302,7 +308,7 @@
                                         <button class="button-delivery button-credit" type="button">Кредит</button>
                                     </li>
                                 </ul>
-                                <div class="wrapper-delivery slide">
+                                <div class="wrapper-delivery slide-current">
                                     <img src="img/postalcar.svg" width="468" height="261" alt="" class="postalcar">
                                     <p class="delivery-title">Доставка</p>
                                     <p class="service-delivery-text">
@@ -312,8 +318,8 @@
                                         поднимая его на ваш этаж!
                                       </p>
                                 </div>
-                                <div class="wrapper-delivery slide-current">
-                                    <img src="/img/garant.svg" width="389" height="283" alt="" class="postalcar">
+                                <div class="wrapper-delivery slide">
+                                    <img src="img/garant.svg" width="389" height="283" alt="" class="img-garant">
                                     <p class="delivery-title">Гарантия</p>
                                     <p class="service-delivery-text">
                                       Если купленный у нас товар поломается или заискрит,
@@ -322,7 +328,7 @@
                                       </p>
                                 </div>
                                 <div class="wrapper-delivery slide">
-                                    <img src="/img/Credit.svg" width="465" height="285" alt="" class="postalcar credit">
+                                    <img src="img/Credit.svg" width="465" height="285" alt="" class="img-credit">
                                     <p class="delivery-title">Кредит</p>
                                     <p class="service-delivery-text">
                                       Залезть в долговую яму стало проще!
@@ -467,3 +473,66 @@
         </div>
     </div>
 </footer>
+
+<section class="modal modal-login">
+    <h3 class="service-title modal-title">Личный кабинет</h3>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="reset">
+            <label class="login-title" for="login-login">Логин</label>
+            <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p class="reset">
+            <label class="login-title" for="login-login">Пароль</label>
+            <input class="modal-icon-pass" id="login-password" type="password" name="password" placeholder="••••••••">
+        </p>
+        <p class="login-help reset">
+            <label class="login-checkbox">
+            <input class="checkremember" type="checkbox" name="remember" checked>
+            <span class="checkbox-indicator"></span>
+              Запомните меня
+            </label>
+        </p>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="button-red modal-btn" type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
+
+<section class="modal modal-feedback">
+    <h3 class="visually-hidden service-title modal-title">Свяжитесь с нами</h3>
+        <form class="feedback-form" action="#" method="post">
+            <fieldset class="feedback-field">
+                <div class="form-wrapper">
+                    <div class="topline">
+                        <div>
+                            <label for="">Ваше имя:</label>
+                            <input class="feedback-input" type="text" name="login" placeholder="Имя Фамилия">
+                        </div>
+                        <div>
+                            <label>Ваш e-mail:</label>
+                            <input class="feedback-input email-input" type="text" name="email" placeholder="email@example.com">
+                        </div>
+                  </div>
+                  <div>
+                      <label>Текст письма:</label>
+                      <textarea class="textarea-input feedback-input" name="textletter" cols="61" rows="6" placeholder="В свободной форме"></textarea>
+                  </div>
+                </div>
+                <div class="form-btn">
+                    <button class="button-red modal-btn btn-modalfeedback" type="submit">Отправить</button>
+              </div>
+            </fieldset>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
+
+<section class="modal modal-map">
+    <h3 class="visually-hidden service-title modal-title">Как до нас добраться</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716648157!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1603893562725!5m2!1sru!2see" width="943" height="449" frameborder="0" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
