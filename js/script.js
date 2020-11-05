@@ -108,38 +108,3 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
-
-/* slider */
-
-// const btnLeft = document.querySelector(".btn-previous"),
-// const btnRight = document.querySelector(".btn-next"),
-// const dots = document.querySelectorAll(".slider-controls"),
-// const firstSlides = document.querySelector(".slider-item"),
-// const secondSlides = document.querySelector(".slider-next"),
-// const slaidesWrapper = document.querySelector(".slider-container");
-// const firstSlide = document.querySelector(".first-slide"),
-// const secondSlide = document.querySelector(".second-slide"),
-
-
-// btnRight.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   console.log("Клик по слайдеру")
-//   firstSlides.classList.remove("slide-current");
-//   secondSlides.classList.add("slide-current");
-//   firstSlide.classList.remove("current");
-//   secondSlides.classList.add("current");
-
-// });
-
-
-// btnLeft.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   console.log("Клик по слайдеру")
-//   firstSlides.classList.remove("slide-current");
-//   secondSlides.classList.add("slide-current");
-//   firstSlide.classList.remove("current");
-//   secondSlides.classList.add("current");
-
-// });
