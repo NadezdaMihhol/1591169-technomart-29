@@ -1261,6 +1261,7 @@ transition: 0.3s ease;
   background: url(../img/shadowblock.png) no-repeat;
   box-shadow: rgba(0, 0, 0, 0.0001);
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .button-delivery:hover {
